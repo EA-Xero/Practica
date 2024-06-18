@@ -1,0 +1,12 @@
+@import "./assets/styles/colors";
+/* You can add global styles to this file, and also import other style files */
+
+.texto-llamativo{
+    color:$fondo;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: $texto;
+}

@@ -1,0 +1,78 @@
+@import "../assets/styles/colors";
+@import "../assets/styles/fuentes";
+header{
+  background-color: $fondo;
+  align-items: center;
+  justify-content: center;
+  .top{
+    
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //max-width: 1130px;
+      padding: 2px 20px;
+      margin: 0px auto;
+      overflow: hidden;
+      .iconos{
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .separador{
+              font-size: $size-small;
+          }
+          a{
+              i{
+                  font-size: 1.5em;
+              }
+          }
+      }
+      .telefonos{
+          min-width: fit-content;
+          line-height: 45px;
+          font-size: $size-large;
+          ;
+          a{
+              text-decoration: none;
+              padding-left: 1em;
+              font-family:'Poppins','Sans-serif';
+              i{
+                  padding-right: 0.5em;
+              }
+          }
+      }
+  }
+}
+
+@media (max-width:950px) {
+  header{
+      .top{
+          flex-direction: column;
+          .telefonos{
+              justify-content: space-between;
+              order: 1;
+          }
+          .iconos{
+              order: 2;
+          }
+      }
+  }
+}
+
+@media (max-width:650px) {
+  header{
+      .top{
+          flex-direction: column;
+          .telefonos{
+              display: flex;
+              flex-flow: column nowrap;
+              order: 1;
+          }
+          .iconos{
+              padding: 1em;
+              order: 2;
+              width: 50%;
+          }
+      }
+  }
+}
