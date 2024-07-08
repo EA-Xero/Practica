@@ -76,3 +76,34 @@ header{
       }
   }
 }
+
+//menu
+
+menu{
+    h1{
+        a{
+            text-decoration:none;}
+    }
+    background-color: $menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1em;
+    ul{
+        list-style:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            a{
+                text-decoration:none;
+                margin:1em;
+                font-size: $size-large;
+                font-family:'Poppins','Sans-serif';
+            }
+            a:hover{
+                color: yellow;
+            }
+        }
+    }
+}
