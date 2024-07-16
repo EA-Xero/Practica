@@ -54,10 +54,15 @@ header {
 }
 
 menu {
-  h1 {
-    a {
-      text-decoration: none;
-    }
+  #logo {
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    margin-left: 4em;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
   }
 
   width: 100%;
@@ -65,7 +70,6 @@ menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
   position: relative;
 
   .menu-icon {
@@ -84,7 +88,6 @@ menu {
     display: flex;
     justify-content: center;
     align-items: center;
-
     li {
       a {
         text-decoration: none;
@@ -165,6 +168,10 @@ menu {
   }
 
   menu {
+    #logo {
+      margin-left: 1em;
+      width: 20%;
+    }
     ul {
       display: flex;
       flex-direction: column;
